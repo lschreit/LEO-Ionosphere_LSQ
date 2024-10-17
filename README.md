@@ -6,6 +6,10 @@ DOI: 10.22541/essoar.170612533.38060840/v1
 As time span May and June 2020 are available. 
 The 3DCut.py and 3DCutVert.py script can be used to compute electron density. Coefficients are in the MOD folder.
 
+External packages used:
+apexpy
+
+
 Copyright 2024 Lucas Schreiter
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
