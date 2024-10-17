@@ -3,13 +3,13 @@
 """
 Created on Fri Mar 31 15:29:35 2023
 
-@author: schreit
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Mar 31 14:30:41 2023
+Script to generate a 3D cut of the electron density in the ionosphere.
+Possible identifiers for tst are:
+    "_PaperFin_002_PWU"
+    "_PaperFin_002_NoSpire_PWU"
+    
+For the first option the boolean filt can be set to True to display electron 
+density obtained from smoothed model coefficients.
 
 @author: schreit
 """
@@ -24,6 +24,9 @@ from NeModel import NeModel as NeM
 
 import pylab
 from datetime import timedelta
+
+
+filt=False
 
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
@@ -40,7 +43,7 @@ day=day_start
 doy=day_start.timetuple().tm_yday
 
 dirDay = "MOD/"+str(year)+str(doy).zfill(3)+tst
-Nem  = NeM(dirDay,filt=False)
+Nem  = NeM(dirDay,filt=filt)
 
 
 
